@@ -1,0 +1,140 @@
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#small-screen {
+    display: none;
+}
+
+ul {
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    row-gap: .15rem;
+    margin-left: -2rem;
+}
+
+li {
+    list-style-type: none;
+    font-size: .9em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atomic-number {
+    font-weight: bold;
+}
+
+.atomic-letter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* Creating space in the grid */
+
+#empty-space-row-1 {
+    grid-column: 2/18;
+    grid-row: 1/2;
+}
+
+#grid-empty-space-row-2-3 {
+    grid-column: 3/13;
+    grid-row: 2/4;
+}
+
+#grid-empty-space-row-8 {
+    grid-column: 1/19;
+    grid-row: 8/9;
+    height: 1rem;
+}
+
+#grid-empty-space-row-9-10 {
+    grid-column: 1/3;
+    grid-row: 9/11;
+}
+
+#star {
+    line-height: 90px;
+}
+
+#double-star {
+    line-height: 90px;
+}
+
+#single-star-right {
+    text-align: right;
+    line-height: 90px;
+    
+}
+
+#double-star-right {
+    text-align: right;
+    line-height: 90px;
+}
+/* Colours for cards*/
+
+#hydrogen, #carbon, #nitrogen, #oxygen, #fluorine, #phosphorus, #sulfur, #chlorine, #selenium, #bromine, #iodine, #astatine, #tennessine {
+    background-color: rgb(255, 255, 205);
+}
+
+#helium, #neon, #argon, #krypton, #xenon, #radon, #oganesson {
+    background-color: rgb(255, 228, 198);
+}
+
+#scandium, #titanium, #vanadium, #chromium, #manganese, #iron, #cobalt, #nickel, #copper, #zinc, #yttrium, #zirconium, #niobium, #molybdenum, #technetium, #ruthenium, #rhodium, #paladium, #silver, #cadmium, #hafnium, #tantalum, #tungsten, #rhenium, #osmium, #iridium, #platinum, #gold, #mercury, #rutherfordium, #dubnium, #seaborgium, #bohrium, #hassium, #meitnerium, #darmstadtium, #roentgenium, #copernicium {
+    background-color: rgb(193, 218, 251);
+}
+
+#berylium, #magnesium, #calcium, #strontium, #barium, #radium {
+    background-color: rgb(210, 211, 255);
+}
+
+#boron, #silicon, #germanium, #arsenic, #antimony, #tellurium, #polonium {
+    background-color: rgb(223, 237, 196);
+}
+
+#aluminium, #galium, #indium, #tin, #thalium, #lead, #bismuth, #nihonium, #flerovium, #moscovium, #livermorium {
+    background-color: rgb(201, 246, 194);
+}
+
+#lithium, #sodium, #potassium, #rubidium, #cesium, #francium {
+    background-color: rgb(255, 204, 201);
+}
+
+#lanthanum, #cerium, #praseodymium, #neodymium, #promethium, #samarium, #europium, #gadolinium, #terbium, #dysprosium, #holmium, #erbium, #thulium, #ytterbium, #lutetium {
+    background-color: rgb(198, 255, 255);
+}
+
+#actinium, #thorium, #protactinium, #uranium, #neptunium, #plutonium, #americium, #curium, #berkelium, #californium, #einsteinium, #fermium, #mendelevium, #nobelium, #lawrencium {
+    background-color: rgb(203, 255, 235);
+}
+
+/* Breakpoints */
+
+@media (max-width: 100rem){
+    
+    .atomic-letter {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 80rem){
+    .atomic-name {
+        display: none;
+    }
+}
+
+@media (max-width: 60rem){
+    ul {
+        display: none;
+    }
+
+    #small-screen {
+        display: block;
+    }
+}
+
+
